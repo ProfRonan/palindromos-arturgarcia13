@@ -1,17 +1,12 @@
 """Main functions"""
-
+import string
 
 def is_palindrome(string: str) -> bool:
     """Check if string is palindrome."""
-    statusFormat = False
-    pont = [".", ",", "!", "?"]
     PalavraF = string.casefold().replace(' ', '')
-    while statusFormat == False:
-        for i in PalavraF:
-            for v in pont:
-                if i == v:
-                    PalavraF = PalavraF.replace(v, "")
-        statusFormat = True
+   
+    for simbolo in string.punctuation
+            PalavraF = PalavraF.replace(simbolo, "")
     
     PalavraInv = PalavraF[::-1]
     #print(f'palindromo formatado {PalavraF}')
