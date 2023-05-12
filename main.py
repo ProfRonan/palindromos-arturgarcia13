@@ -1,15 +1,15 @@
 """Main functions"""
 import string
 
-def is_palindrome(string: str) -> bool:
+def is_palindrome(String: str) -> bool:
     """Check if string is palindrome."""
-    PalavraF = string.casefold().replace(' ', '')
+    PalavraF = String.casefold().replace(' ', '')
    
     for simbolo in string.punctuation:
             PalavraF = PalavraF.replace(simbolo, "")
     
     PalavraInv = PalavraF[::-1]
-    #print(f'palindromo formatado {PalavraF}')
+    print(f'palindromo formatado {PalavraF}')
     #print(f'palindromo invertido {PalavraInv}')
     
     if PalavraF == PalavraInv:
