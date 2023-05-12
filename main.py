@@ -5,7 +5,7 @@ def is_palindrome(string: str) -> bool:
     """Check if string is palindrome."""
     PalavraF = string.casefold().replace(' ', '')
    
-    for simbolo in string.punctuation
+    for simbolo in string.punctuation:
             PalavraF = PalavraF.replace(simbolo, "")
     
     PalavraInv = PalavraF[::-1]
